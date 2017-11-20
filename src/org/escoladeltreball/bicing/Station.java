@@ -49,7 +49,7 @@ public class Station {
 		this.status = status;
 	}
 	
-	// *************** Getter & Setters ****************
+	// *************** Getter & Setters ***************
 
 	/**
 	 * @return the id
