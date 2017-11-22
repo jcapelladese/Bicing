@@ -11,10 +11,10 @@ public class Station {
 	
 	private int id;
 	private String type;
-	private long latitude;
-	private long longitude;
+	private double latitude;
+	private double longitude;
 	private String streetName;
-	private int streetNumber;
+	private String streetNumber;
 	private int altitude;
 	private int slots;
 	private int bikes;
@@ -34,7 +34,7 @@ public class Station {
 	 * @param nearbyStatins
 	 * @param status
 	 */
-	public Station(int id, String type, long latitude, long longitude, String streetName, int streetNumber,
+	public Station(int id, String type, double latitude, double longitude, String streetName, String streetNumber,
 			int altitude, int slots, int bikes, String nearbyStatins, String status) {
 		this.id = id;
 		this.type = type;
@@ -82,28 +82,28 @@ public class Station {
 	/**
 	 * @return the latitude
 	 */
-	public long getLatitude() {
+	public double getLatitude() {
 		return latitude;
 	}
 
 	/**
 	 * @param latitude the latitude to set
 	 */
-	public void setLatitude(long latitude) {
+	public void setLatitude(double latitude) {
 		this.latitude = latitude;
 	}
 
 	/**
 	 * @return the longitude
 	 */
-	public long getLongitude() {
+	public double getLongitude() {
 		return longitude;
 	}
 
 	/**
 	 * @param longitude the longitude to set
 	 */
-	public void setLongitude(long longitude) {
+	public void setLongitude(double longitude) {
 		this.longitude = longitude;
 	}
 
@@ -124,14 +124,14 @@ public class Station {
 	/**
 	 * @return the streetNumber
 	 */
-	public int getStreetNumber() {
+	public String getStreetNumber() {
 		return streetNumber;
 	}
 
 	/**
 	 * @param streetNumber the streetNumber to set
 	 */
-	public void setStreetNumber(int streetNumber) {
+	public void setStreetNumber(String streetNumber) {
 		this.streetNumber = streetNumber;
 	}
 
